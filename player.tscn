@@ -1,7 +1,24 @@
-[gd_scene load_steps=9 format=3 uid="uid://caklofyawkv3"]
+[gd_scene load_steps=14 format=3 uid="uid://caklofyawkv3"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_7urcm"]
+[ext_resource type="Texture2D" uid="uid://byapk4sba8lsb" path="res://imgs/giraffe bonk animation-Recovered.png" id="2_1sknq"]
 [ext_resource type="Texture2D" uid="uid://7esqk4yupfap" path="res://imgs/walk.png" id="2_op1fv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_daks5"]
+atlas = ExtResource("2_1sknq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdhdg"]
+atlas = ExtResource("2_1sknq")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htfbq"]
+atlas = ExtResource("2_1sknq")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln7t2"]
+atlas = ExtResource("2_1sknq")
+region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aeaej"]
 atlas = ExtResource("2_op1fv")
@@ -21,6 +38,23 @@ region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_582a3"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_daks5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdhdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htfbq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln7t2")
+}],
+"loop": true,
+"name": &"bonk",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 0.8,
 "texture": SubResource("AtlasTexture_aeaej")
@@ -50,8 +84,7 @@ texture_filter = 1
 scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_582a3")
 animation = &"walk"
-frame = 1
-frame_progress = 0.590937
+frame_progress = 0.879324
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(21, -3.5)
