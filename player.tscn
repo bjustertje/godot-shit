@@ -43,16 +43,16 @@ region = Rect2(48, 0, 16, 16)
 [sub_resource type="SpriteFrames" id="SpriteFrames_582a3"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_daks5")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_kdhdg")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_htfbq")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_ln7t2")
 }],
 "loop": true,
@@ -87,8 +87,8 @@ script = ExtResource("1_7urcm")
 texture_filter = 1
 scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_582a3")
-animation = &"walk"
-frame_progress = 0.879324
+animation = &"bonk"
+frame_progress = 0.352745
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(21, -3.5)
