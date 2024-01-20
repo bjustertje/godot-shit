@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=14 format=3 uid="uid://caklofyawkv3"]
-=======
-[gd_scene load_steps=9 format=3 uid="uid://cxfvfkldvqtub"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" path="res://Player.gd" id="1_7urcm"]
 [ext_resource type="Texture2D" uid="uid://byapk4sba8lsb" path="res://imgs/giraffe bonk animation-Recovered.png" id="2_1sknq"]
