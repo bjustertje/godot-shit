@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxeqtqi4wg2pu"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_of2ld"]
+[ext_resource type="Texture2D" uid="uid://c1riv60f1851g" path="res://imgs/hippopotamus.png" id="2_h0skl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh377"]
+atlas = ExtResource("2_h0skl")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a5ni"]
+atlas = ExtResource("2_h0skl")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7p07b"]
+atlas = ExtResource("2_h0skl")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4w7ls"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_hh377")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8a5ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7p07b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Hippopotamus" type="CharacterBody2D" parent="."]
+position = Vector2(11, 8)
+script = ExtResource("1_of2ld")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Hippopotamus"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_4w7ls")
